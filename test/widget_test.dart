@@ -11,6 +11,15 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:hello_world_example/main.dart';
 
 void main() {
+  testWidgets('App title test', (WidgetTester tester) async {
+    await tester.pumpWidget(MyApp());
+
+    final appTitle = find.text('Demo app');
+    expect(appTitle, findsOneWidget);
+    expect(
+        Theme.of(tester.element(appTitle)).primaryColor, equals(Colors.blue));
+  });
+
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {
     // Build our app and trigger a frame.
     await tester.pumpWidget(MyApp());
