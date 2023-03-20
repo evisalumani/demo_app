@@ -14,7 +14,7 @@ void main() {
   testWidgets('App title test', (WidgetTester tester) async {
     await tester.pumpWidget(MyApp());
 
-    final appTitle = find.text('Demo app');
+    final appTitle = find.text('Tutorial app');
     expect(appTitle, findsOneWidget);
     expect(Theme.of(tester.element(appTitle)).primaryColor, equals(Colors.red));
   });
