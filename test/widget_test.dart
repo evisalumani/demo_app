@@ -16,8 +16,7 @@ void main() {
 
     final appTitle = find.text('Tutorial app');
     expect(appTitle, findsOneWidget);
-    expect(
-        Theme.of(tester.element(appTitle)).primaryColor, equals(Colors.blue));
+    expect(Theme.of(tester.element(appTitle)).primaryColor, equals(Colors.red));
   });
 
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {
