@@ -3,26 +3,15 @@
 # separate terms of service, privacy policy, and support
 # documentation.
 
-name: Flutter action
+# Workflow built based on: https://github.com/marketplace/actions/flutter-action
+
+name: Flutter app workflow
 
 on:
   push:
     branches: [ "master" ]
   pull_request:
     branches: [ "master" ]
-    
-# jobs:
-#   build:
-#     runs-on: macos-latest
-#     steps:
-#     - uses: actions/checkout@v3
-#     - uses: subosito/flutter-action@v2
-#       with:
-#         channel: 'stable'
-#         architecture: x64
-#     - run: flutter pub get
-#     - run: flutter test
-#     - run: flutter build ios --release --no-codesign
 
 jobs:
   build:
