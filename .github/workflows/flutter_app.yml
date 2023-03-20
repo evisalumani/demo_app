@@ -5,7 +5,7 @@
 
 # Workflow built based on: https://github.com/marketplace/actions/flutter-action
 
-name: Flutter action
+name: Flutter app workflow
 
 on:
   push:
